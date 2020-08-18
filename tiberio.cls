@@ -1,8 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{clgrammar}[2020/04/25 Conlang Grammar Book]
 
-
-
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions\relax
 
@@ -16,7 +14,7 @@
 
 % IPA support
 \RequirePackage{fontspec}
-\setmainfont{Noto Serif}
+\setmainfont{Modesto-Condensed-Bold.ttf}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
 
@@ -46,6 +44,7 @@
     \renewcommand{\footrulewidth}{1pt}
 }
 
+
 % Better section titles
 \RequirePackage{titlesec}
 \usepackage{tocloft}
@@ -55,6 +54,8 @@
 \titleformat{\section}[block]
     {\normalfont\bfseries\huge}
     {{\color{section}\large }}{6pt}{}
+    
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
     
 \renewcommand\cftchapfont{\LARGE\bfseries}
 \renewcommand\cftsecfont{\LARGE}
@@ -76,7 +77,7 @@ color=black,
 opacity=1,
 angle=0,
 contents={%
-  \includegraphics[width=\paperwidth,height=\paperheight]{images/art.jpg}
+  \includegraphics[width=\paperwidth,height=\paperheight]{images/backgrounds/art.jpg}
   }%
 }
 
